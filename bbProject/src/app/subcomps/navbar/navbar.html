@@ -1,3 +1,32 @@
-<div>
-    <p-image src="../../../assets/logo_black.png" alt="BudgetBuddy Logo" width="150"></p-image>
+<div class="w-full flex justify-between px-14 items-center bg-white shadow-md rounded-2xl py-3">
+  <!-- Logo -->
+  <div>
+    <p-image src="logo_black.png" alt="BudgetBuddy Logo" width="300"></p-image>
+  </div>
+
+
+  <!-- nav-items -->
+  <nav class="space-x-16 text-xl">
+    <a class="cursor-pointer text-gray-500 hover:text-black duration-150" routerLink="" routerLinkActive="!text-black" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a class="cursor-pointer text-gray-500 hover:text-black duration-100" routerLink="/overall" routerLinkActive="!text-black">Overall</a>
+    <a class="cursor-pointer text-gray-500 hover:text-black duration-100" routerLink="/saveplaces" routerLinkActive="!text-black">Save Places</a>
+  </nav>
+
+  <!-- user stuff -->
+
+  <div class="flex items-center space-x-4">
+    <div class="flex items-center space-x-1.5">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="green" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+      </svg>
+      <!-- User Status -->
+      <p class="text-xl">0.00€</p>
+    </div>
+
+    <div class="bg-white p-3 rounded-full shadow-md hover:shadow-lg cursor-pointer duration-100">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" class="size-7">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+      </svg>
+    </div>
+  </div>
 </div>
